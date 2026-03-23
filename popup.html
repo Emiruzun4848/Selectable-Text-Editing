@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 320px; padding: 15px; font-family: system-ui, sans-serif; }
+    h2 { margin: 0 0 15px 0; text-align: center; }
+    #current { margin: 10px 0; padding: 10px; background: #f0f0f0; border-radius: 6px; }
+    button { width: 100%; padding: 12px; margin: 8px 0; font-size: 15px; border: none; border-radius: 6px; cursor: pointer; }
+    #toggle-btn { background: #0066ff; color: white; font-weight: bold; }
+    #toggle-btn:hover { background: #0055dd; }
+    ul { list-style: none; padding: 0; max-height: 200px; overflow-y: auto; }
+    li { padding: 8px; background: #f9f9f9; margin: 4px 0; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+    .remove { background: #ff4444; color: white; padding: 4px 8px; font-size: 12px; border: none; border-radius: 4px; }
+    input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <h2>🔓 Metin Seçimi Zorla</h2>
+
+  <div id="current"></div>
+  <button id="toggle-btn">Bu siteye ekle</button>
+
+  <h3>Kayıtlı Siteler</h3>
+  <ul id="site-list"></ul>
+
+  <input id="custom-input" type="text" placeholder="https://ornek.com">
+  <button id="add-custom">Özel Site Ekle</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
