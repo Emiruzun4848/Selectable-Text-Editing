@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Selectable Text Editing",
+  "version": "1.0",
+  "description": "Turns on text selection and copying on the sites you want",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Text Selection Toggle"
+  }
+}
